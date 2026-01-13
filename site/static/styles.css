@@ -1,0 +1,47 @@
+body {
+    background-image: url("/static/perlin.png");
+    background-size: 100px;
+    overflow: hidden;
+    font-family: "Chelsea Market";
+    background-color: #FF00FF;
+    position: relative;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    width: fit-content;
+    background-color: lime;
+    color: red;
+    padding: 1em;
+    animation: marquee 10s linear infinite;
+    white-space: nowrap;
+    border: 5px dotted yellow;
+    box-shadow: 0 0 20px red;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100vw);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+div > p {
+    margin-block: 0;
+}
+
+div > p > a {
+    color: green;
+}
+
+.netscape-badge {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: white;
+    padding: 1em;
+}
