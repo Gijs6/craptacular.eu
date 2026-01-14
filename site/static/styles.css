@@ -3,7 +3,7 @@ body {
     background-size: 100px;
     overflow: hidden;
     font-family: "Chelsea Market";
-    background-color: #FF00FF;
+    background-color: #ff00ff;
     position: relative;
     min-height: 100vh;
     padding: 0;
@@ -20,7 +20,6 @@ div {
     border: 5px dotted yellow;
     box-shadow: 0 0 20px red;
     text-align: center;
-
 }
 
 @keyframes marquee {
@@ -33,11 +32,11 @@ div {
     }
 }
 
-div>p {
+div > p {
     margin-block: 0;
 }
 
-div>p>a {
+div > p > a {
     color: green;
 }
 
