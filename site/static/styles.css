@@ -1,5 +1,6 @@
 body {
     background-image: url("/static/perlin.png");
+    backdrop-filter: sepia(20%);
     background-size: 100px;
     overflow: hidden;
     font-family: "Chelsea Market";
@@ -12,7 +13,8 @@ body {
 
 div {
     width: 100vw;
-    background-color: lime;
+    background-color: #00ff0080;
+    backdrop-filter: blur(1.5em);
     color: red;
     padding: 1em;
     animation: marquee 5s linear infinite;
@@ -24,13 +26,14 @@ div {
 
 @keyframes marquee {
     0% {
-        transform: translateX(100vw);
+        transform: translate(100vw, 100vh) rotate(90deg);
     }
 
     100% {
-        transform: translateX(-100%);
+        transform: translate(-100%, -100%);
     }
 }
+
 
 div > p {
     margin-block: 0;
