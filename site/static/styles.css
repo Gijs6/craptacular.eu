@@ -19,8 +19,6 @@ section {
     font-size: 2.8vh;
 }
 
-
-
 section > p {
     margin-block: 0.6lh;
 }
@@ -32,8 +30,6 @@ section > p > a {
     color: rebeccapurple;
     transform: rotate(18deg);
 }
-
-
 
 div {
     width: 1.8ch;
