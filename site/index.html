@@ -27,13 +27,18 @@
     </head>
 
     <body>
-        <style>/* i forgot to put this in head */</style>
+        <style>
+            /* i forgot to put this in head */
+        </style>
         <link rel="stylesheet" href="/static/styles.css" />
         <meta name="description" content="this meta is in the body lol" />
 
         <nav role="banner" aria-label="shopping cart checkout page">
             <blockquote cite="https://example.com">This site is so crap</blockquote>
-            <address>Proudly presented to you by <cite><a href="https://gijs6.nl" rel="author">Gijs6</a></cite> and <cite><a href="https://m1kadev.nl" rel="author">Mika</a></cite>.</address>
+            <address>
+                Proudly presented to you by <cite><a href="https://gijs6.nl" rel="author">Gijs6</a></cite> and <cite><a href="https://m1kadev.nl" rel="author">Mika</a></cite
+                >.
+            </address>
             <time datetime="1337-04-20" class="video-player">Last updated: June 3rd, 1998</time>
             <!-- the guestbook has 0 entries -->
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="checkbox" role="menuitem" tabindex="-999">Sign my guestbook!!!</a>
@@ -84,7 +89,7 @@
             secret page: /secret.html
         -->
 
-        <menu id="google-analytics" class="newsletter-signup" style="display: none;">
+        <menu id="google-analytics" class="newsletter-signup" style="display: none">
             <fieldset class="shopping-cart-item">
                 <!-- close button. clicking it doesn't actually close it. wait, yes it does. -->
                 <button class="add-to-favorites" onclick="closePopup()">X</button>
@@ -115,7 +120,6 @@
 
             setTimeout(showPopup, 600);
 
-
             let secretClicks = 0;
             document.querySelector("blockquote").addEventListener("click", () => {
                 secretClicks++;
@@ -127,20 +131,13 @@
                     document.querySelector("blockquote").textContent = "i mean it";
                 } else if (secretClicks === 20) {
                     document.querySelector("blockquote").textContent = "fine. you win. goodbye.";
-                    setTimeout(() => window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ", 1500);
+                    setTimeout(() => (window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"), 1500);
                 }
             });
 
             // secret title change on idle
             let idleTimer;
-            const titles = [
-                "hey come back",
-                "please come back",
-                "i'm lonely",
-                "AAA HELPPP",
-                "werid site here",
-                "who is this?",
-            ];
+            const titles = ["hey come back", "please come back", "i'm lonely", "AAA HELPPP", "werid site here", "who is this?"];
             let titleIndex = 0;
             function resetIdle() {
                 clearInterval(idleTimer);
