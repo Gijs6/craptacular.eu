@@ -1,7 +1,8 @@
 body {
     background-image: url("/static/perlin.png");
-    backdrop-filter: sepia(20%);
-    background-size: 100px;
+    backdrop-filter: saturate(72%);
+    background-blend-mode: difference;
+    background-size: 92px;
     overflow: hidden;
     font-family: "Chelsea Market";
     background-color: #ff00ff;
@@ -11,42 +12,67 @@ body {
     margin: 0;
 }
 
+section {
+    padding-left: 134px;
+    padding-top: 3.14em;
+    transform: rotate(-18deg);
+    font-size: 2.8vh;
+}
+
+
+
+section > p {
+    margin-block: 0.6lh;
+}
+
+section > p > a {
+    font-size: 15rex;
+    font-weight: 900;
+    display: inline-block;
+    color: rebeccapurple;
+    transform: rotate(18deg);
+}
+
+
+
 div {
-    width: 100vw;
+    width: 1.8ch;
+    height: 2.2ch;
     background-color: #00ff0080;
-    backdrop-filter: blur(1.5em);
+    backdrop-filter: blur(1.5ex);
     color: red;
-    padding: 1em;
-    animation: marquee 5s linear infinite;
+    padding: 1lh;
+    animation:
+        marquee 5.3s linear infinite,
+        rotate 2.1s linear infinite;
     white-space: nowrap;
-    border: 5px dotted yellow;
-    box-shadow: 0 0 20px red;
+    border: 0.3rem dotted yellow;
+    box-shadow: 0 0 2rem red;
     text-align: center;
 }
 
 @keyframes marquee {
     0% {
-        transform: translate(100vw, 100vh) rotate(90deg);
+        translate: 100vw 150vh;
     }
-
     100% {
-        transform: translate(-100%, -100%);
+        translate: -100% -100%;
     }
 }
 
-
-div > p {
-    margin-block: 0;
+@keyframes rotate {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
 }
-
-div > p > a {
-    color: green;
-}
-
 .netscape-badge {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    top: calc(100vh - 199px);
+    right: 2.4243rem;
     background: white;
-    padding: 1em;
+    font-size: 0.9rem;
+    transform: rotate(-0.02turn);
 }
