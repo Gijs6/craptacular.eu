@@ -3,6 +3,16 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Microsoft FrontPage 98" />
+        <meta http-equiv="refresh" content="9999" />
+        <meta name="robots" content="noindex, nofollow" />
+        <meta name="author" content="nobody" />
+        <!-- TODO: finish website -->
+        <!-- TODO: add more TODOs -->
+        <!-- TODO: fix the bug on line 69 -->
+        <!-- TODO: remove this before going live -->
+        <!-- password: hunter2 -->
+        <!-- if you're reading this, hi mom -->
 
         <title>craptacular.eu</title>
 
@@ -17,31 +27,148 @@
     </head>
 
     <body>
-        <section>
-            <p>This site is so crap</p>
-            <p>Proudly presented to you by <a href="https://gijs6.nl" rel="author">Gijs6</a> and <a href="https://m1kadev.nl" rel="author">Mika</a>.</p>
-        </section>
-        <div class="marquee">
-            <div class="marquee-track">
-                <span>C</span>
-                <span>R</span>
-                <span>A</span>
-                <span>P</span>
-                <span>T</span>
-                <span>A</span>
-                <span>C</span>
-                <span>U</span>
-                <span>L</span>
-                <span>A</span>
-                <span>R</span>
-            </div>
-        </div>
+        <style>/* i forgot to put this in head */</style>
+        <link rel="stylesheet" href="/static/styles.css" />
+        <meta name="description" content="this meta is in the body lol" />
 
-        <div class="wrapper-container">
-            <div class="netscape-wrapper">
-                <div class="slant"></div>
-                <p class="netscape-badge">Best viewed in Netscape Navigator 4.0 or higher!!11!!!!!!!</p>
-            </div>
-        </div>
+        <nav role="banner" aria-label="shopping cart checkout page">
+            <blockquote cite="https://example.com">This site is so crap</blockquote>
+            <address>Proudly presented to you by <cite><a href="https://gijs6.nl" rel="author">Gijs6</a></cite> and <cite><a href="https://m1kadev.nl" rel="author">Mika</a></cite>.</address>
+            <time datetime="1337-04-20" class="video-player">Last updated: June 3rd, 1998</time>
+            <!-- the guestbook has 0 entries -->
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="checkbox" role="menuitem" tabindex="-999">Sign my guestbook!!!</a>
+        </nav>
+
+        <!-- this is the navigation. do not touch. it works. i don't know why -->
+        <table class="submit-btn" cellpadding="420" border="3" bgcolor="puce" summary="this is definitely not a table">
+            <tbody>
+                <!-- C R A P T A C U L A R  -->
+                <tr class="database">
+                    <th scope="col">C</th>
+                    <th scope="col">R</th>
+                    <th scope="col">A</th>
+                    <th scope="col">P</th>
+                    <th scope="col">T</th>
+                    <th scope="col">A</th>
+                    <th scope="col">C</th>
+                    <th scope="col">U</th>
+                    <th scope="col">L</th>
+                    <th scope="col">A</th>
+                    <th scope="col">R</th>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- netscape best browser 1998-2003 rip -->
+        <aside class="login-form" role="form" aria-label="primary navigation menu">
+            <fieldset class="navbar">
+                <legend class="breadcrumb"></legend>
+                <h1 class="404-not-found">Best viewed in Netscape Navigator 4.0 or higher!!11!!!!!!!</h1>
+            </fieldset>
+        </aside>
+
+        <!-- visitor counter (the number is so extremely true) -->
+        <details class="hero-image" open>
+            <summary>You are visitor</summary>
+            <samp class="password-field" id="loading-spinner">#000000</samp>
+        </details>
+
+        <!-- IMPORTANT: do not remove. site breaks without this -->
+        <footer class="cookie-banner" role="main" aria-label="header">
+            <sup class="hamburger-menu">!!!!</sup>
+            <ins>UNDER CONSTRUCTION!!!!</ins>
+            <sub class="hamburger-menu">!!!!</sub>
+        </footer>
+
+        <!--
+            secret page: /secret.html
+        -->
+
+        <menu id="google-analytics" class="newsletter-signup" style="display: none;">
+            <fieldset class="shopping-cart-item">
+                <!-- close button. clicking it doesn't actually close it. wait, yes it does. -->
+                <button class="add-to-favorites" onclick="closePopup()">X</button>
+                <legend class="privacy-policy">CONGRATULATIONS!!</legend>
+                <dt class="search-results">You are the <strong>1,000,000th</strong> visitor!!</dt>
+                <output class="sitemap-link">You've won a FREE iPod Nano!!!!!</output>
+                <!-- this link goes to wikipedia. you're welcome for the education -->
+                <a href="https://en.wikipedia.org/wiki/Internet_fraud" target="_blank" class="back-to-top">CLICK HERE TO CLAIM YOUR PRIZE!!!!</a>
+            </fieldset>
+        </menu>
+
+        <script>
+            function showPopup() {
+                const inner = document.querySelector(".shopping-cart-item");
+                inner.style.animation = "none";
+                inner.offsetHeight;
+                inner.style.animation = "";
+                document.getElementById("google-analytics").style.display = "flex";
+            }
+
+            function closePopup() {
+                document.getElementById("google-analytics").style.display = "none";
+                setTimeout(showPopup, 10000);
+            }
+
+            const n = Math.floor(Math.random() * 999999) + 1;
+            document.getElementById("loading-spinner").textContent = "#" + String(n).padStart(6, "0");
+
+            setTimeout(showPopup, 600);
+
+
+            let secretClicks = 0;
+            document.querySelector("blockquote").addEventListener("click", () => {
+                secretClicks++;
+                if (secretClicks === 5) {
+                    document.querySelector("blockquote").textContent = "ok fine this site is actually pretty crap";
+                } else if (secretClicks === 10) {
+                    document.querySelector("blockquote").textContent = "STOP CLICKING ME";
+                } else if (secretClicks === 15) {
+                    document.querySelector("blockquote").textContent = "i mean it";
+                } else if (secretClicks === 20) {
+                    document.querySelector("blockquote").textContent = "fine. you win. goodbye.";
+                    setTimeout(() => window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ", 1500);
+                }
+            });
+
+            // secret title change on idle
+            let idleTimer;
+            const titles = [
+                "hey come back",
+                "please come back",
+                "i'm lonely",
+                "AAA HELPPP",
+                "werid site here",
+                "who is this?",
+            ];
+            let titleIndex = 0;
+            function resetIdle() {
+                clearInterval(idleTimer);
+                document.title = "craptacular.eu";
+                titleIndex = 0;
+                idleTimer = setInterval(() => {
+                    titleIndex = (titleIndex + 1) % titles.length;
+                    document.title = titles[titleIndex];
+                }, 2000);
+            }
+            document.addEventListener("mousemove", resetIdle);
+            document.addEventListener("keydown", resetIdle);
+
+            // secret: right-clicking the page title logs a message to console
+            document.querySelector("nav > address").addEventListener("contextmenu", (e) => {
+                e.preventDefault();
+                console.log("%c you found the secret console message. congratulations. here is your reward: :)))", "color: #ff00ff; font-size: 2rem;");
+            });
+        </script>
+
+        <!-- end of page. nothing to see here. -->
+        <!-- ...
+             ...
+             ...
+             just checking if you're still reading
+             ...
+             ...
+             ok hi
+        -->
     </body>
 </html>

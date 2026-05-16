@@ -12,32 +12,34 @@ body {
     margin: 0;
 }
 
-section {
+nav {
     padding-left: 134px;
     padding-top: 3.14em;
     transform: rotate(-18deg);
     font-size: 2.8vh;
 }
 
-section > p {
+nav > blockquote,
+nav > address,
+nav > time {
     margin-block: 0.6lh;
 }
 
-section > p > a {
+nav > address > cite > a {
     font-size: 15rex;
     font-weight: 900;
     display: inline-block;
     color: rebeccapurple;
     transform: rotate(18deg);
 }
-.marquee {
+.submit-btn {
     position: fixed;
     inset: 0;
     overflow: hidden;
     pointer-events: none;
 }
 
-.marquee-track {
+.database {
     position: absolute;
     display: flex;
     gap: 1rem;
@@ -49,7 +51,7 @@ section > p > a {
     animation: marquee 6s linear infinite;
 }
 
-.marquee-track span {
+.database th {
     background-color: #00ff0080;
     backdrop-filter: blur(1.5ex);
     color: red;
@@ -73,57 +75,57 @@ section > p > a {
         bob var(--bob-duration) ease-in-out var(--bob-delay) infinite;
 }
 
-.marquee-track span:nth-child(1) {
+.database th:nth-child(1) {
     --bob-duration: 1.8s;
     --bob-delay: 0s;
     --bob-amount: -2rem;
 }
-.marquee-track span:nth-child(2) {
+.database th:nth-child(2) {
     --bob-duration: 2.3s;
     --bob-delay: -0.9s;
     --bob-amount: 3rem;
 }
-.marquee-track span:nth-child(3) {
+.database th:nth-child(3) {
     --bob-duration: 1.5s;
     --bob-delay: -0.3s;
     --bob-amount: -3.5rem;
 }
-.marquee-track span:nth-child(4) {
+.database th:nth-child(4) {
     --bob-duration: 2.7s;
     --bob-delay: -1.2s;
     --bob-amount: 2.5rem;
 }
-.marquee-track span:nth-child(5) {
+.database th:nth-child(5) {
     --bob-duration: 1.9s;
     --bob-delay: -0.5s;
     --bob-amount: -1.5rem;
 }
-.marquee-track span:nth-child(6) {
+.database th:nth-child(6) {
     --bob-duration: 2.1s;
     --bob-delay: -1.8s;
     --bob-amount: 4rem;
 }
-.marquee-track span:nth-child(7) {
+.database th:nth-child(7) {
     --bob-duration: 1.6s;
     --bob-delay: -0.8s;
     --bob-amount: -2.8rem;
 }
-.marquee-track span:nth-child(8) {
+.database th:nth-child(8) {
     --bob-duration: 2.4s;
     --bob-delay: -0.4s;
     --bob-amount: 2rem;
 }
-.marquee-track span:nth-child(9) {
+.database th:nth-child(9) {
     --bob-duration: 1.7s;
     --bob-delay: -1.5s;
     --bob-amount: -3rem;
 }
-.marquee-track span:nth-child(10) {
+.database th:nth-child(10) {
     --bob-duration: 2s;
     --bob-delay: -0.6s;
     --bob-amount: 3.5rem;
 }
-.marquee-track span:nth-child(11) {
+.database th:nth-child(11) {
     --bob-duration: 2.6s;
     --bob-delay: -1.1s;
     --bob-amount: -2.2rem;
@@ -157,18 +159,18 @@ section > p > a {
     }
 }
 
-.wrapper-container {
+.login-form {
     position: absolute;
     bottom: 100px;
     right: 100px;
 }
 
-.netscape-wrapper {
+.navbar {
     position: relative;
     display: inline-block;
 }
 
-.slant {
+.breadcrumb {
     position: absolute;
     inset: 0;
     background: darkolivegreen;
@@ -176,10 +178,241 @@ section > p > a {
     z-index: 0;
 }
 
-.netscape-badge {
+.404-not-found {
     position: relative;
     z-index: 1;
     margin: 0;
     padding: 2.2rem 0.7rem;
     font-size: 0.9rem;
+}
+
+.video-player {
+    font-size: 0.75rem;
+    color: lime;
+    margin-top: 1rem;
+    display: block;
+}
+
+.checkbox {
+    display: inline-block;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    padding: 0.3rem 0.8rem;
+    border: 2px dotted white;
+    font-size: 0.85rem;
+    animation: blink-el 0.8s step-start infinite;
+}
+
+.hero-image {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background: #000080;
+    color: #00ff00;
+    text-decoration: none;
+    padding: 0.8rem 1.2rem;
+    text-align: center;
+    font-family: "Courier New", monospace;
+    font-size: 0.85rem;
+    border: 4px solid yellow;
+    animation: blink-border 1s step-start infinite;
+    z-index: 100;
+}
+
+.hero-image summary,
+.hero-image samp {
+    margin: 0;
+}
+
+.password-field {
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    display: block;
+}
+
+.cookie-banner {
+    position: absolute;
+    bottom: 24px;
+    left: 50px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: repeating-linear-gradient(
+        45deg,
+        #111 0px,
+        #111 20px,
+        #ffcc00 20px,
+        #ffcc00 40px
+    );
+    padding: 0.8rem 1.5rem;
+    border: 3px solid #333;
+    z-index: 100;
+}
+
+.cookie-banner ins {
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    text-shadow: 2px 2px black;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.hamburger-menu {
+    font-size: 1.5rem;
+    display: inline-block;
+    animation: swing 0.6s ease-in-out infinite alternate;
+}
+
+.cookie-banner .hamburger-menu:last-child {
+    animation-direction: alternate-reverse;
+}
+
+.newsletter-signup {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    pointer-events: none;
+}
+
+.shopping-cart-item {
+    pointer-events: all;
+    background: #ffff00;
+    border: 8px solid red;
+    padding: 2rem 2.5rem;
+    text-align: center;
+    max-width: 380px;
+    position: relative;
+    box-shadow:
+        0 0 3rem blue,
+        0 0 7rem red;
+    animation: popup-enter 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.add-to-favorites {
+    position: absolute;
+    top: 0.3rem;
+    right: 0.3rem;
+    background: red;
+    color: white;
+    border: 2px solid darkred;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.1rem 0.5rem;
+    font-family: inherit;
+}
+
+.add-to-favorites:hover {
+    background: darkred;
+}
+
+.privacy-policy {
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin: 0 0 0.5rem;
+    animation: rainbow-text 0.5s linear infinite;
+}
+
+.search-results {
+    font-size: 1.1rem;
+    color: #000080;
+    margin: 0.3rem 0;
+    display: block;
+}
+
+.sitemap-link {
+    font-size: 1rem;
+    color: #006600;
+    margin: 0.3rem 0;
+    display: block;
+}
+
+.back-to-top {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 900;
+    border: 3px solid darkred;
+    animation: blink-el 0.5s step-start infinite;
+}
+
+@keyframes blink-el {
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes blink-border {
+    0%,
+    33% {
+        border-color: yellow;
+    }
+    34%,
+    66% {
+        border-color: cyan;
+    }
+    67%,
+    100% {
+        border-color: red;
+    }
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(-25deg);
+    }
+    100% {
+        transform: rotate(25deg);
+    }
+}
+
+@keyframes popup-enter {
+    0% {
+        transform: scale(0) rotate(360deg);
+        opacity: 0;
+    }
+    70% {
+        transform: scale(1.15) rotate(-5deg);
+        opacity: 1;
+    }
+    85% {
+        transform: scale(0.95) rotate(2deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+@keyframes rainbow-text {
+    0% {
+        color: red;
+    }
+    17% {
+        color: orange;
+    }
+    33% {
+        color: #cccc00;
+    }
+    50% {
+        color: green;
+    }
+    67% {
+        color: blue;
+    }
+    83% {
+        color: violet;
+    }
+    100% {
+        color: red;
+    }
 }
