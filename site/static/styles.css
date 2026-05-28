@@ -1,9 +1,8 @@
 body {
     background-image: url("/static/perlin.png");
-    backdrop-filter: saturate(72%);
     background-blend-mode: difference;
     background-size: 92px;
-    overflow: hidden;
+    overflow: clip;
     font-family: "Chelsea Market";
     background-color: #ff00ff;
     position: relative;
@@ -12,34 +11,35 @@ body {
     margin: 0;
 }
 
-nav {
+.c1 {
     padding-left: 134px;
     padding-top: 3.14em;
     transform: rotate(-18deg);
     font-size: 2.8vh;
 }
 
-nav > blockquote,
-nav > address,
-nav > time {
+.c1 > .c2,
+.c1 > .c3,
+.c1 > .c4 {
     margin-block: 0.6lh;
 }
 
-nav > address > cite > a {
-    font-size: 15rex;
+.c1 > .c3 > a {
+    font-size: 1.8rem;
     font-weight: 900;
     display: inline-block;
     color: rebeccapurple;
     transform: rotate(18deg);
 }
-.submit-btn {
+
+.c6 {
     position: fixed;
     inset: 0;
     overflow: hidden;
     pointer-events: none;
 }
 
-.database {
+.c7 {
     position: absolute;
     display: flex;
     gap: 1rem;
@@ -51,7 +51,7 @@ nav > address > cite > a {
     animation: marquee 6s linear infinite;
 }
 
-.database th {
+.c8 {
     background-color: #00ff0080;
     backdrop-filter: blur(1.5ex);
     color: red;
@@ -75,57 +75,57 @@ nav > address > cite > a {
         bob var(--bob-duration) ease-in-out var(--bob-delay) infinite;
 }
 
-.database th:nth-child(1) {
+.c8:nth-child(1) {
     --bob-duration: 1.8s;
     --bob-delay: 0s;
     --bob-amount: -2rem;
 }
-.database th:nth-child(2) {
+.c8:nth-child(2) {
     --bob-duration: 2.3s;
     --bob-delay: -0.9s;
     --bob-amount: 3rem;
 }
-.database th:nth-child(3) {
+.c8:nth-child(3) {
     --bob-duration: 1.5s;
     --bob-delay: -0.3s;
     --bob-amount: -3.5rem;
 }
-.database th:nth-child(4) {
+.c8:nth-child(4) {
     --bob-duration: 2.7s;
     --bob-delay: -1.2s;
     --bob-amount: 2.5rem;
 }
-.database th:nth-child(5) {
+.c8:nth-child(5) {
     --bob-duration: 1.9s;
     --bob-delay: -0.5s;
     --bob-amount: -1.5rem;
 }
-.database th:nth-child(6) {
+.c8:nth-child(6) {
     --bob-duration: 2.1s;
     --bob-delay: -1.8s;
     --bob-amount: 4rem;
 }
-.database th:nth-child(7) {
+.c8:nth-child(7) {
     --bob-duration: 1.6s;
     --bob-delay: -0.8s;
     --bob-amount: -2.8rem;
 }
-.database th:nth-child(8) {
+.c8:nth-child(8) {
     --bob-duration: 2.4s;
     --bob-delay: -0.4s;
     --bob-amount: 2rem;
 }
-.database th:nth-child(9) {
+.c8:nth-child(9) {
     --bob-duration: 1.7s;
     --bob-delay: -1.5s;
     --bob-amount: -3rem;
 }
-.database th:nth-child(10) {
+.c8:nth-child(10) {
     --bob-duration: 2s;
     --bob-delay: -0.6s;
     --bob-amount: 3.5rem;
 }
-.database th:nth-child(11) {
+.c8:nth-child(11) {
     --bob-duration: 2.6s;
     --bob-delay: -1.1s;
     --bob-amount: -2.2rem;
@@ -159,18 +159,18 @@ nav > address > cite > a {
     }
 }
 
-.login-form {
-    position: absolute;
+.c9 {
+    position: fixed;
     bottom: 100px;
     right: 100px;
 }
 
-.navbar {
+.c10 {
     position: relative;
     display: inline-block;
 }
 
-.breadcrumb {
+.c11 {
     position: absolute;
     inset: 0;
     background: darkolivegreen;
@@ -178,7 +178,7 @@ nav > address > cite > a {
     z-index: 0;
 }
 
-.404-not-found {
+.c12 {
     position: relative;
     z-index: 1;
     margin: 0;
@@ -186,14 +186,14 @@ nav > address > cite > a {
     font-size: 0.9rem;
 }
 
-.video-player {
+.c4 {
     font-size: 0.75rem;
     color: lime;
     margin-top: 1rem;
     display: block;
 }
 
-.checkbox {
+.c5 {
     display: inline-block;
     background: #ff6600;
     color: white;
@@ -204,8 +204,8 @@ nav > address > cite > a {
     animation: blink-el 0.8s step-start infinite;
 }
 
-.hero-image {
-    position: absolute;
+.c13 {
+    position: fixed;
     top: 24px;
     right: 24px;
     background: #000080;
@@ -220,20 +220,19 @@ nav > address > cite > a {
     z-index: 100;
 }
 
-.hero-image summary,
-.hero-image samp {
+.c13 > div {
     margin: 0;
 }
 
-.password-field {
+.c14 {
     font-size: 1.6rem;
     font-weight: bold;
     letter-spacing: 3px;
     display: block;
 }
 
-.cookie-banner {
-    position: absolute;
+.c15 {
+    position: fixed;
     bottom: 24px;
     left: 50px;
     display: flex;
@@ -245,7 +244,7 @@ nav > address > cite > a {
     z-index: 100;
 }
 
-.cookie-banner ins {
+.c15 .c16 {
     margin: 0;
     color: white;
     font-weight: bold;
@@ -255,17 +254,17 @@ nav > address > cite > a {
     text-decoration: none;
 }
 
-.hamburger-menu {
+.c17 {
     font-size: 1.5rem;
     display: inline-block;
     animation: swing 0.6s ease-in-out infinite alternate;
 }
 
-.cookie-banner .hamburger-menu:last-child {
+.c15 .c17:last-child {
     animation-direction: alternate-reverse;
 }
 
-.newsletter-signup {
+.c18 {
     position: fixed;
     inset: 0;
     display: flex;
@@ -275,7 +274,7 @@ nav > address > cite > a {
     pointer-events: none;
 }
 
-.shopping-cart-item {
+.c19 {
     pointer-events: all;
     background: #ffff00;
     border: 8px solid red;
@@ -289,7 +288,7 @@ nav > address > cite > a {
     animation: popup-enter 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
 
-.add-to-favorites {
+.c20 {
     position: absolute;
     top: 0.3rem;
     right: 0.3rem;
@@ -302,32 +301,32 @@ nav > address > cite > a {
     font-family: inherit;
 }
 
-.add-to-favorites:hover {
+.c20:hover {
     background: darkred;
 }
 
-.privacy-policy {
+.c21 {
     font-size: 1.6rem;
     font-weight: 900;
     margin: 0 0 0.5rem;
     animation: rainbow-text 0.5s linear infinite;
 }
 
-.search-results {
+.c22 {
     font-size: 1.1rem;
     color: #000080;
     margin: 0.3rem 0;
     display: block;
 }
 
-.sitemap-link {
+.c23 {
     font-size: 1rem;
     color: #006600;
     margin: 0.3rem 0;
     display: block;
 }
 
-.back-to-top {
+.c24 {
     display: inline-block;
     margin-top: 1rem;
     background: #ff6600;
@@ -385,6 +384,129 @@ nav > address > cite > a {
     100% {
         transform: scale(1) rotate(0deg);
     }
+}
+
+.c25 {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    z-index: 999999;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 2rem;
+}
+
+.c26 {
+    background: #fffde7;
+    border: 5px solid #333;
+    padding: 1.5rem 2rem;
+    max-width: 480px;
+    position: relative;
+    box-shadow:
+        0 0 0 5px #333,
+        8px 8px 0 5px #000;
+}
+
+.c27 {
+    position: absolute;
+    top: 0.3rem;
+    right: 0.3rem;
+    background: #ccc;
+    color: #555;
+    border: 1px solid #999;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.1rem 0.5rem;
+    font-family: inherit;
+}
+
+.c27:hover {
+    background: #bbb;
+}
+
+.c28 {
+    font-size: 1.2rem;
+    margin: 0 0 0.8rem;
+    font-family: "Barrio", sans-serif;
+}
+
+.c29 {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin: 0 0 0.8rem;
+    color: #222;
+    padding-left: 0;
+}
+
+.c35 {
+    display: block;
+    margin-block: 0.5em;
+}
+
+.c36 {
+    display: list-item;
+    list-style-type: none;
+    margin-left: 1em;
+}
+
+.c30 {
+    display: block;
+    font-size: 0.75rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.c30 a {
+    color: blue;
+}
+
+.c31 {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: visible;
+}
+
+.c32 {
+    background: #ddd;
+    color: #888;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    font-size: 0.7rem;
+    padding: 0.3rem 0.5rem;
+    font-family: inherit;
+    white-space: nowrap;
+}
+
+#i5 {
+    overflow: visible;
+}
+
+.c33 {
+    background: #00cc44;
+    color: white;
+    border: 3px solid #007722;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 900;
+    padding: 0.6rem 1.2rem;
+    font-family: inherit;
+    animation: blink-el 1.2s step-start infinite;
+    flex: 1;
+}
+
+.c33:hover {
+    background: #00aa33;
+}
+
+.c34 {
+    display: block;
+    margin-top: 0.8rem;
+    font-size: 0.7rem;
+    color: #777;
+    font-style: italic;
 }
 
 @keyframes rainbow-text {
